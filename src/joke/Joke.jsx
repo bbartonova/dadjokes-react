@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { render } from 'react-dom';
-import './style.css';
-import { jokes } from '../jokes';
-import { Joke } from '../src/joke/Joke';
+import '../joke/style.css';
 
-const App = () => {
+export const Joke = () => {
   const [likeCount, setLikeCount] = useState(0);
   const [dislikeCount, setDislikeCount] = useState(0);
 
@@ -53,12 +51,10 @@ const App = () => {
             </div>
           </div>
         </div>
-
-        <Joke />
       </main>
       <footer></footer>
     </div>
   );
 };
 
-render(<App />, document.querySelector('#app'));
+render(<Joke />, document.querySelector('#app'));
