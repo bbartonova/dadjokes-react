@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { render } from 'react-dom';
 import './style.css';
-import { jokes } from '../jokes';
+
 import { Joke } from '../src/joke/Joke';
 
 const App = () => {
